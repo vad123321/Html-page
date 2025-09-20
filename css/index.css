@@ -1,0 +1,95 @@
+:root {
+  --font-family: "Inter", sans-serif;
+  --second-family: "Poppins", sans-serif;
+  --third-family: "Manrope", sans-serif;
+  --font3: "Montserrat", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.page-header h1 {
+    display: inline-block;
+    margin: 0;
+    vertical-align: middle;
+}
+
+.page-header {
+    padding-block: 41px;
+    background-color: #ffffff;
+}
+
+.container {
+    margin-inline: auto;
+}
+
+.nav-bar {
+    display: inline-block;
+    margin-inline: 50px;
+    width: 1243px;
+}
+
+.page-header-brand {
+    margin: 0;
+}
+
+.page-header-logo {
+    display: block;
+}
+
+.page-header-logo-img {
+    display: block;
+    width: 99px;
+    height: 60px;
+}
+
+.header-menu {
+    display: inline-block;
+    padding-inline-start: 0;
+    vertical-align: middle;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+}
+
+.header-menu-item {
+    display: inline-block;
+    margin-inline: 16px;
+}
+
+.header-menu-link {
+    font-family: var(--second-family);
+    font-weight: 600;
+    font-size: 15px;
+    color: #000;
+}
+
+.menu-item_1 {
+    margin-inline: 71px 130px;
+}
+
+.menu-link_1 {
+    text-decoration: underline;
+    text-decoration-color: #c4161c;
+    text-decoration-thickness: 4px;
+    text-underline-offset: 8px;
+}
+
+.menu-item_2 {
+    margin-inline: 200px 33px;
+}
+
+.menu-item_3 {
+    padding-inline-start: 32px;
+    border-inline-start: 2px solid #dad8d8;
+}
