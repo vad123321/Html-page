@@ -31,11 +31,12 @@ a {
 
 .container {
     margin-inline: auto;
+    width: 1243px;
 }
 
 .nav-bar {
     display: inline-block;
-    margin-inline: 50px;
+    /* margin-inline: 50px; */
     width: 1243px;
 }
 
@@ -74,22 +75,124 @@ a {
     color: #000;
 }
 
-.menu-item_1 {
+.header-menu-item_1 {
     margin-inline: 71px 130px;
 }
 
-.menu-link_1 {
+.header-menu-link_1 {
     text-decoration: underline;
     text-decoration-color: #c4161c;
     text-decoration-thickness: 4px;
     text-underline-offset: 8px;
 }
 
-.menu-item_2 {
+.header-menu-item_2 {
     margin-inline: 200px 33px;
 }
 
-.menu-item_3 {
+.header-menu-item_3 {
     padding-inline-start: 32px;
     border-inline-start: 2px solid #dad8d8;
+}
+
+.main {
+    margin-top: 80px;
+}
+
+.hero {
+    display: flex;
+}
+
+.hero-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.hero-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.hero-list {
+    display: flex;
+    list-style: none;
+    width: 237px;
+    gap: 18px;
+    margin: 0;
+    border-bottom: 1px solid #dad8d8;
+    padding: 0 0 8px;
+}
+
+.hero-menu-item {
+    display: flex;
+}
+
+.hero-menu-link {
+    font-family: var(--second-family);
+    font-weight: 600;
+    font-size: 15px;
+    color: rgba(214, 212, 212, 0.88);
+    text-decoration: none;
+}
+
+.hero-menu-link_1 {
+    color: #b00000;
+    border-bottom: 1px solid #c4161c;
+    margin-bottom: -8px;
+}
+
+.hero-title {
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 121%;
+    color: #2e2e2e;
+    width: 680px;
+    margin-block: 26px 0;
+}
+
+.hero-subtitle {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 175%;
+    letter-spacing: 0.05em;
+    color: #808080;
+    width: 454px;
+    margin-block: 34px 60px;
+}
+
+.btn {
+    border-radius: 8px;
+    padding: 12px;
+    width: 166px;
+    height: 48px;
+}
+
+.btn-red {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 171%;
+    color: #fff;
+    background: #b00000;
+    margin-inline-end: 24px;
+}
+
+.btn-white {
+    border: 1px solid #000;
+    padding: 12px;
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 171%;
+    color: #000;
+}
+
+.hero-img {
+    width: 519px;
+    height: 504px;
 }
