@@ -1,11 +1,13 @@
 :root {
-  --font-family: "Inter", sans-serif;
-  --second-family: "Poppins", sans-serif;
-  --third-family: "Manrope", sans-serif;
-  --font3: "Montserrat", sans-serif;
+    --font-family: "Inter", sans-serif;
+    --second-family: "Poppins", sans-serif;
+    --third-family: "Manrope", sans-serif;
+    --font3: "Montserrat", sans-serif;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
 }
 
@@ -23,11 +25,11 @@ a {
     text-decoration: none;
 }
 
-.page-header h1 {
+/* .page-header h1 {
     display: inline-block;
     margin: 0;
     vertical-align: middle;
-}
+} */
 
 .page-header {
     padding-block: 41px;
@@ -40,17 +42,19 @@ a {
 }
 
 .nav-bar {
-    display: inline-block;
-    /* margin-inline: 50px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     width: 1243px;
 }
 
-.page-header-brand {
+/* .page-header-brand {
     margin: 0;
-}
+} */
 
 .page-header-logo {
-    display: block;
+    margin: 0;
+    /* display: block; */
 }
 
 .page-header-logo-img {
@@ -174,7 +178,6 @@ a {
     border-radius: 8px;
     padding: 12px;
     width: 166px;
-    height: 48px;
 }
 
 .btn-red {
@@ -198,8 +201,9 @@ a {
 }
 
 .hero-img {
-    width: 519px;
-    height: 504px;
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 .benefits {
@@ -253,15 +257,10 @@ a {
 .benefits-list-item {
     width: 259px;
     position: relative;
-    padding-top: 100px; 
+    padding-top: 100px;
 }
 
-/* .list-uptime {
-    position: relative;
-    padding-top: 100px; 
-} */
-
-.list-uptime::before {
+.benefits-list-item::before {
     content: "";
     position: absolute;
     left: 30%;
@@ -269,52 +268,25 @@ a {
     transform: translateY(-50%);
     width: 103px;
     height: 100px;
-    background-image: url('../img/icn1_1.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
+}
+
+.list-uptime::before {
+    background-image: url('../img/icn1_1.png');
 }
 
 .list-ups::before {
-    content: "";
-    position: absolute;
-    left: 30%;
-    top: 25%;
-    transform: translateY(-50%);
-    width: 103px;
-    height: 100px;
     background-image: url('../img/frame_1.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
 }
 
 .list-ssl::before {
-    content: "";
-    position: absolute;
-    left: 30%;
-    top: 25%;
-    transform: translateY(-50%);
-    width: 103px;
-    height: 100px;
     background-image: url('../img/icn4_1.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
 }
 
 .list-support::before {
-    content: "";
-    position: absolute;
-    left: 30%;
-    top: 25%;
-    transform: translateY(-50%);
-    width: 103px;
-    height: 100px;
     background-image: url('../img/icn1_1.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
 }
 
 .benefits-list-title {
@@ -331,4 +303,75 @@ a {
     font-size: 12px;
     text-align: center;
     color: #000;
+}
+
+.footer {
+    padding-block: 80px;
+    background: #b00000;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas:
+        "item1 item2"
+        "item3 item3";
+    gap: 104px 120px;
+    padding-right: 0;
+}
+
+.footer-brand {
+    grid-area: item1;
+}
+
+.footer-brand-logo {
+    padding-bottom: 16px;
+}
+
+.footer-brand-description {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 200%;
+    color: #e6e6e6;
+}
+
+.footer-nav {
+    grid-area: item2;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.footer-nav-title {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    color: #fff;
+}
+
+.footer-nav-list {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-nav-list-item {
+    padding-block: 12px;
+}
+
+.footer-nav-list-link {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 200%;
+    color: #e6e6e6;
+}
+
+.footer-copy {
+    grid-area: item3;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 200%;
+    color: #fff;
 }
